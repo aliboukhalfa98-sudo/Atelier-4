@@ -16,3 +16,10 @@ class Compte {
     }
   }
 }
+
+void main() {
+  Compte compte = Compte("CB-1001");
+  compte.depot(150);
+  compte.depot(-50); // refusé, car négatif
+  print("Compte ${compte.numeroCompte} - Solde : ${compte.solde}");
+}
